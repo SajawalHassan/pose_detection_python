@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/pose_detection_python">
+  <a href="https://github.com/SajawalHassan/pose_detection_python">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -12,14 +12,14 @@
   <p align="center">
     A pose detector using AI.
     <br />
-    <a href="https://github.com/othneildrew/pose_detection_python"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SajawalHassan/pose_detection_python"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/pose_detection_python">View Demo</a>
+    <a href="https://github.com/SajawalHassan/pose_detection_python">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/pose_detection_python/issues">Report Bug</a>
+    <a href="https://github.com/SajawalHassan/pose_detection_python/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/pose_detection_python/issues">Request Feature</a>
+    <a href="https://github.com/SajawalHassan/pose_detection_python/issues">Request Feature</a>
   </p>
 </div>
 
