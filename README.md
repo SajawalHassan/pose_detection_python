@@ -15,8 +15,6 @@
     <a href="https://github.com/SajawalHassan/pose_detection_python"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/SajawalHassan/pose_detection_python">View Demo</a>
-    ·
     <a href="https://github.com/SajawalHassan/pose_detection_python/issues">Report Bug</a>
     ·
     <a href="https://github.com/SajawalHassan/pose_detection_python/issues">Request Feature</a>
