@@ -18,7 +18,7 @@ class PoseTracker():
         self.pose = self.mpPose.Pose()
         self.mpDraw = mp.solutions.drawing_utils
 
-    def trackPose(self, img, draw=True):
+    def trackPose(self, img, draw=True, coordinates=False):
         # Convert to rgb
         imgRgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 
@@ -28,7 +28,7 @@ class PoseTracker():
         if draw:
             if self.results.pose_landmarks:
                 self.mpDraw.draw_landmarks(img, self.results.pose_landmarks, self.mpPose.POSE_CONNECTIONS)
-        else:
+        if coordinates:
             print(self.results.pose_landmarks)
 
     def findPos(self, img, draw=True):
