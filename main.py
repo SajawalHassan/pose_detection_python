@@ -4,7 +4,7 @@ import time
 import pose_tracker_module as pose_tracker
 
 # Capturing vid (cange filename to 0 if need webcam)
-capture = cv.VideoCapture("videos/vid_test_body.3gp")
+capture = cv.VideoCapture(0)
 
 pTime = 0
 
