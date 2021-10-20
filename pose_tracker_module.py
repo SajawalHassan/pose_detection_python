@@ -18,6 +18,7 @@ class PoseTracker():
         self.pose = self.mpPose.Pose()
         self.mpDraw = mp.solutions.drawing_utils
 
+    # Used for detecting poses
     def trackPose(self, img, draw=True, coordinates=False):
         # Convert to rgb
         imgRgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)
@@ -31,6 +32,7 @@ class PoseTracker():
         if coordinates:
             print(self.results.pose_landmarks)
 
+    # Used for detecting landmarks
     def findPos(self, img, draw=True):
 
         self.lmList = []
@@ -46,6 +48,7 @@ class PoseTracker():
 
         return self.lmList
 
+    # Used for calculating angles between user specified landmarks
     def findAngle(self, img, p1, p2, p3, draw=True):
 
         x1, y1 = self.lmList[p1][1:]

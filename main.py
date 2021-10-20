@@ -2,9 +2,13 @@ import cv2 as cv
 import mediapipe as mp
 import time
 import pose_tracker_module as pose_tracker
+import ip
 
 # Capturing vid (cange filename to 0 if need webcam)
 capture = cv.VideoCapture(0)
+
+address = ip.ip
+capture.open(address)
 
 pTime = 0
 
