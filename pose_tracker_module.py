@@ -1,6 +1,9 @@
 import cv2 as cv
 import mediapipe as mp
+import math
 import time
+
+from numpy.lib.function_base import angle
 
 class PoseTracker():
     def __init__(self, static_img=False, model_comp=1, landmarks=True, enable_segmentation=False,
@@ -55,6 +58,12 @@ class PoseTracker():
         x2, y2 = self.lmList[p2][1:]
         x3, y3 = self.lmList[p3][1:]
 
+        # Calculating angle
+        ang = math.degrees(math.atan2(y3 - y2, x3 - x2), (y1 - y2, x1 - x2))
+
+        if ang < 0:
+            ang += 360
+
         if draw:
             cv.line(img, (x1, y1), (x2, y2), (255,255,255), 3)
             cv.line(img, (x2, y2), (x3, y3), (255,255,255), 3)
@@ -64,6 +73,7 @@ class PoseTracker():
             cv.circle(img, (x2, y2), 15, (0,0,255), 2)
             cv.circle(img, (x3, y3), 10, (0,0,255), -1)
             cv.circle(img, (x3, y3), 15, (0,0,255), 2)
+            cv.putText(img, f"{int(ang)}", (x2-50, y2+50), cv.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 2)
 
         
 
