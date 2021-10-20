@@ -59,7 +59,7 @@ class PoseTracker():
         x3, y3 = self.lmList[p3][1:]
 
         # Calculating angle
-        ang = math.degrees(math.atan2(y3 - y2, x3 - x2), (y1 - y2, x1 - x2))
+        ang = math.degrees(math.atan2(y3 - y2, x3 - x2) - (y1 - y2, x1 - x2))
 
         if ang < 0:
             ang += 360
